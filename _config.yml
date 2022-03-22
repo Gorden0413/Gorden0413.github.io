@@ -1,0 +1,48 @@
+# Basic
+title: KUANG,MING-CHEN
+subtitle: Homepage
+description: Welcome to my homepage
+avatarTitle: Gorden0413
+avatarDesc: Machine Learning/NLP
+url: "http://Gorden0413.tw"
+
+enableToc: true
+
+# Comment
+comment:
+    disqus: Gorden0413
+
+# Social
+social:
+    github: Gorden0413
+    mail: b08502105@ntu.edu.tw
+
+
+
+permalink: /:year/:month/:title/
+# Format
+highlighter: rouge
+
+textColor: #FF0000
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
+
+# The blog button should not be removed.
+blog_button:
+    title: Homepage
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: Archive, description: archive, url: '/archive'}   
+    - {title: Tags, description: tags, url: '/tags'}      
+    - {title: Support, description: support, url: '/support'}      
+    - {title: About Me, description: about, url: '/about'}   
+    
+
+# Pagination
+gems: [jekyll-paginate,jekyll-sitemap]
+paginate: 20
+paginate_path: "page/:num/"
+
+
