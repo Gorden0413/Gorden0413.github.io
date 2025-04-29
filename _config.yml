@@ -24,7 +24,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Kuang-Ming Chen"
-  pronouns         : # example: "she/her"  
+  pronouns         : "he/his"  
   bio              : "AI/ML Learner"
   location         : "Seattle, WA"
   employer         : "University of Washington"
@@ -38,7 +38,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/Gorden0413"
+  github           : "Gorden0413"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -51,7 +51,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/kuang-ming-chen/"
+  linkedin         : "kuang-ming-chen"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
