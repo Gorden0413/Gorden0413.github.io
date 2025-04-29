@@ -1,5 +1,7 @@
 ---
  permalink: /
+ title: "Kuang-Ming Chen | Academic Homepage"
+ author_profile: true
  redirect_from: 
    - /about/
    - /about.html
