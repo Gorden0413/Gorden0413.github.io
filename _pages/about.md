@@ -1,44 +1,31 @@
 ---
 permalink: /
-title: "Kuang-Ming Chen | Academic Homepage"
+title: "Kuang-Ming Chen | Research in Multimodal and Language Models"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Welcome! I'm **Kuang-Ming Chen**, a Master's student in Electrical and Computer Engineering at the University of Washington. This website serves as my **personal academic homepage**, a **portfolio for job applications**, and a **platform to showcase my research and projects**.
+Welcome! I'm Kuang-Ming Chen (陳光銘), currently a graduate student at the University of Washington, where I work in the [Information Processing Lab](http://www.ee.washington.edu/research/ip/) under the supervision of Prof. Jenq-Neng Hwang. My current research focuses on **Vision-Language Models (VLMs) Understanding**, particularly how to align and interpret multimodal information effectively.
 
-It is built using the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted via [GitHub Pages](https://pages.github.com), allowing easy updates and open access to my academic contributions. Feel free to explore my [publications](/publications), [talks](/talks), [teaching](/teaching), [blog](/blog), and [CV](/cv).
+Before this, I completed my undergraduate studies at National Taiwan University, advised by Prof. Hung-yi Lee. My previous work involved **training pipelines for Large Language Models (LLMs)** and **self-supervised learning for speech models**, with a strong interest in making foundation models more accessible and efficient for real-world applications.
 
----
+This website is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io), built with Jekyll and hosted via [GitHub Pages](https://pages.github.com). You’ll find information about my publications, research projects, teaching experiences, and more throughout this site.
 
-### A data-driven personal website
+A data-driven personal website
+======
+This site separates content (like publications, talks, and blog posts) from design. Each content item is written in structured markdown and stored in version-controlled repositories. This makes it easy to update, automate, and repurpose your research information.
 
-Like many other Jekyll-based GitHub Pages templates, Academic Pages separates the website's content from its form. The content & metadata of this website are stored in structured markdown files, while theme files control how that content is rendered. Every time an update is pushed to the GitHub repository, GitHub Pages automatically builds and hosts a static HTML version.
+I’m also working on automating my publication/talk list using structured data (CSV/JSON) and Jupyter notebooks, following workflows outlined in the original [Academic Pages repo](https://github.com/academicpages/academicpages.github.io).
 
-This approach mimics the functionality of dynamic CMS platforms like WordPress but with significantly lower overhead and greater flexibility. Moreover, all academic content — including publications, talks, and a dynamically-generated CV — remains secure, portable, and script-accessible. For example, [this notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) visualizes where talks have been given using structured data from the `_talks` directory.
+Getting started with your own site?
+======
+1. Fork the [template](https://github.com/academicpages/academicpages.github.io)
+2. Customize `_config.yml` and navigation files
+3. Add your markdown files under directories like `_publications`, `_talks`, and `_posts`
+4. Host it for free on GitHub Pages!
 
----
+For more details, check the [setup guide](https://academicpages.github.io/markdown/) or explore the [Minimal Mistakes theme documentation](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
-### Getting started
-
-1. Create a GitHub account and verify your email.
-2. Fork [this template](https://github.com/academicpages/academicpages.github.io) using the "Use this template" button.
-3. Rename the repository to `[your-username].github.io`.
-4. Modify `_config.yml` and `_data/navigation.yml` to personalize site-wide settings.
-5. Add content using markdown files inside folders like `_publications`, `_talks`, `_posts`, etc.
-6. Upload supporting files (e.g., PDFs) to the `/files/` directory.
-
----
-
-### More resources
-
-- [Markdown guide for Academic Pages](https://academicpages.github.io/markdown/)
-- [GitHub Discussions for help](https://github.com/academicpages/academicpages.github.io/discussions)
-- [Minimal Mistakes Theme Docs](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
-
----
-
-Thanks for visiting! Please check back as I continue updating this site with new projects and research.
-
+Thanks for visiting!
