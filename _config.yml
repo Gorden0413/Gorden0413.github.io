@@ -22,7 +22,7 @@ repository               : "Gorden0413/Gorden0413.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "kmprofile.png"
   name             : "Kuang-Ming Chen"
   pronouns         : "he/his"  
   bio              : "AI/ML Learner"
