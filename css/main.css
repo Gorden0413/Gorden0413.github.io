@@ -1593,3 +1593,48 @@ body {
         margin-left: 0 !important;
     }
 }
+
+/* Final Polish for Sidebar Typography and Icon Layout */
+.panel-title {
+    font-size: 1.8em !important; /* Smaller to keep name on 1-2 lines */
+    color: #fff !important;
+    margin-top: 15px !important;
+}
+
+.panel-subtitle {
+    font-size: 0.9em !important;
+    color: #aeaeae !important;
+}
+
+.nav-menu-item a {
+    color: #FFD700 !important; /* Gold color for better clarity and professional look */
+    font-size: 1.1em !important;
+}
+
+.nav-menu-item a:hover {
+    color: #fff !important;
+}
+
+/* Horizontal layout for social icons */
+.navigation--social {
+    display: block !important;
+    margin-top: 15px !important;
+}
+
+.navigation--social .navigation {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+.navigation--social .navigation__item {
+    display: inline-block !important;
+    margin: 0 10px !important; /* Horizontal spacing between icons */
+}
+
+.navigation--social i {
+    font-size: 1.5em !important;
+    color: #fff !important;
+}
