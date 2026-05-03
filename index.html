@@ -138,7 +138,7 @@ layout: default
   <section id="projects" class="section">
     <h1 class="section-title">Other Projects</h1>
     <div class="project-item">
-      <h3>Autonomous Data Analyst Agent [<a href="https://github.com/Gorden0413/Autonomous-Data-Analyst" target="_blank">Code</a>]</h3>
+      <h3>Autonomous Data Analyst Agent <span class="project-link">[<a href="https://github.com/Gorden0413/Autonomous-Data-Analyst" target="_blank">Code</a>]</span></h3>
       <ul>
         <li>Developed a 14B Llama-based model reasoning over database metadata via deterministic Python execution.</li>
         <li>Achieved 82% accuracy on TabMWP (vs 20% base model).</li>
@@ -149,7 +149,7 @@ layout: default
       <p>Used TMRobot and OpenCV to automatically detect and replace electric motorcycle batteries.</p>
     </div>
     <div class="project-item">
-      <h3>Stock Price Prediction [<a href="https://github.com/Gorden0413/stock_price_prediction" target="_blank">Code</a>]</h3>
+      <h3>Stock Price Prediction <span class="project-link">[<a href="https://github.com/Gorden0413/stock_price_prediction" target="_blank">Code</a>]</span></h3>
       <p>Trained an LSTM model using TensorFlow to predict Taiwan stock prices with 90% accuracy.</p>
     </div>
   </section>
@@ -190,9 +190,21 @@ layout: default
     font-size: 24px; font-weight: bold; margin-bottom: 20px;
     color: #27408B; border-bottom: 2px solid #27408B; padding-bottom: 5px;
   }
-  .experience-item, .project-item, .education-item, .talk-item, .teaching-item { margin-bottom: 25px; }
-  .experience-item h3, .project-item h3, .education-item h3, .talk-item h3, .teaching-item h3 {
-    font-size: 20px; margin-bottom: 5px; display: flex; justify-content: space-between;
+  .experience-item h3, .education-item h3, .talk-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .project-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .project-link {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 8px;
+    vertical-align: middle;
   }
   .date { font-size: 14px; color: #666; font-weight: normal; }
   .role { font-style: italic; color: #555; margin-bottom: 10px; }
