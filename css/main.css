@@ -1545,3 +1545,51 @@ body {
         padding: 60px 10% !important;
     }
 }
+
+/* Resolve Sidebar Content Overflow and Width Issues */
+.panel-cover--collapsed {
+    width: 30% !important; /* Increase width from 22% to 30% */
+    max-width: 450px !important; /* Increase max-width to fit larger text */
+}
+
+.content-wrapper {
+    width: 70% !important; /* Adjust content width to match new sidebar */
+    margin-left: 30% !important;
+}
+
+.panel-main__inner {
+    padding: 0 30px !important; /* Standardize side padding */
+    box-sizing: border-box !important;
+}
+
+.navigation-wrapper {
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.navigation {
+    display: inline-block !important; /* Center the vertical list */
+    text-align: left !important;
+    margin: 0 auto !important;
+}
+
+/* Ensure images and text stay within bounds */
+.ih-item.circle, .ih-item.circle .img {
+    margin: 0 auto !important;
+}
+
+.panel-title, .panel-subtitle, .panel-cover__description {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+@media all and (max-width: 1100px) {
+    .panel-cover--collapsed {
+        width: 100% !important;
+        max-width: none !important;
+    }
+    .content-wrapper {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
