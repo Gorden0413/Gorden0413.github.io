@@ -17,6 +17,7 @@ social:
     github: Gorden0413
     mail: zxcv900322@gmail.com
     linkedin: kuang-ming-chen
+    scholar: Vj46MQ8AAAAJ
 
 permalink: /:year/:month/:title/
 # Format
@@ -35,6 +36,8 @@ blog_button:
 nav:
     - {title: Experience, description: experience, url: '/#experience'}
     - {title: Publications, description: publications, url: '/#publications'}
+    - {title: Talks, description: talks, url: '/#talks'}
+    - {title: Teaching, description: teaching, url: '/#teaching'}
     - {title: Projects, description: projects, url: '/#projects'}
     - {title: Education, description: education, url: '/#education'}
     - {title: Skills, description: skills, url: '/#skills'}

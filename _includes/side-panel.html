@@ -72,6 +72,16 @@
                 </li>
               {% endif %}
 
+              {% if site.social.scholar %}
+                <!-- Google Scholar -->
+                <li class="navigation__item">
+                  <a href="https://scholar.google.com/citations?user={{ site.social.scholar }}" title="Google Scholar" target="_blank">
+                    <i class='social fa fa-graduation-cap'></i>
+                    <span class="label">Google Scholar</span>
+                  </a>
+                </li>
+              {% endif %}
+
               {% if site.social.mail %}
                 <!-- Email -->
                 <li class="navigation__item">

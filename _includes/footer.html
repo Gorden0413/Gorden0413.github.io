@@ -22,6 +22,15 @@
           </li>
           {% endif %}
 
+          {% if site.social.scholar %}
+          <!-- Google Scholar -->
+          <li class="navigation__item_social">
+            <a href="https://scholar.google.com/citations?user={{site.social.scholar}}" title="Google Scholar" target="_blank">
+              <i class='social fa fa-graduation-cap' style="font-size:20px;"></i>
+            </a>
+          </li>
+          {% endif %}
+
           {% if site.social.mail %}
           <!-- Email -->
           <li class="navigation__item_social">
