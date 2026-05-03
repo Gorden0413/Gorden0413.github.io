@@ -1441,3 +1441,28 @@ nav a {
   transform: translateY(-3px);
 }
 /*导航按钮-end*/
+
+/* Force Larger Font Sizes */
+body {
+    font-size: 22px !important;
+}
+
+.panel-title {
+    font-size: 4em !important;
+}
+
+.panel-subtitle {
+    font-size: 1.6em !important;
+}
+
+.nav-menu-item a {
+    font-size: 1.6em !important;
+}
+
+.section-title {
+    font-size: 30px !important;
+}
+
+.experience-item h3, .project-item h3, .education-item h3 {
+    font-size: 24px !important;
+}
