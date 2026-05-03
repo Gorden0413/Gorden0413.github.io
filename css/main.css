@@ -1466,3 +1466,32 @@ body {
 .experience-item h3, .project-item h3, .education-item h3 {
     font-size: 24px !important;
 }
+
+/* Final Fine-tuning for Layout and Readability */
+body {
+    font-size: 18px !important;
+}
+
+.panel-title {
+    font-size: 3em !important;
+    white-space: nowrap;
+}
+
+.panel-subtitle {
+    font-size: 1.1em !important;
+}
+
+.nav-menu-item a {
+    font-size: 1.1em !important;
+    color: #fff !important; /* Make it clearer/whiter */
+    white-space: nowrap;
+}
+
+.cover-navigation {
+    margin-top: 20px;
+}
+
+.navigation__item {
+    margin-bottom: 10px;
+    display: block !important; /* Stack vertically if needed to prevent overlap */
+}
