@@ -1495,3 +1495,53 @@ body {
     margin-bottom: 10px;
     display: block !important; /* Stack vertically if needed to prevent overlap */
 }
+
+/* Fixing Sidebar Overflow and Layout Issues */
+.panel-main__inner {
+    padding: 40px 20px !important; /* Reduce padding to give more space for text */
+    max-width: 100% !important;
+}
+
+.panel-title {
+    font-size: 2.2em !important; /* Slightly smaller to fit width */
+    white-space: normal !important; /* Allow wrapping if name is too long */
+    line-height: 1.1 !important;
+}
+
+.panel-subtitle {
+    font-size: 1.0em !important;
+    white-space: normal !important;
+}
+
+.nav-menu-item {
+    display: block !important;
+    margin-right: 0 !important;
+    margin-bottom: 5px !important;
+    float: none !important;
+}
+
+.nav-menu-item a {
+    font-size: 1.1em !important;
+    padding: 5px 0 !important;
+}
+
+.cover-navigation {
+    width: 100% !important;
+    margin: 20px 0 !important;
+}
+
+.navigation {
+    display: block !important;
+    width: 100% !important;
+}
+
+.navigation__item {
+    display: block !important;
+    margin: 5px 0 !important;
+}
+
+@media all and (max-width: 1100px) {
+    .panel-main__inner {
+        padding: 60px 10% !important;
+    }
+}
