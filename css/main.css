@@ -1324,15 +1324,15 @@ body {
 
 .ih-item.circle {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
 }
 
 .ih-item.circle .img {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
 }
 .ih-item.circle .img:before {
