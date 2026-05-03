@@ -2,33 +2,191 @@
 layout: default
 ---
 
-<div class="main-post-list hidden">
+<div class="main-post-list">
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta">        
-        <time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">
-          <img src="/images/calendar.png" width="20px" /> 
-          {{ post.date | date: "%F"}}</time> 
-        <div class = "tag-img-icon">
-          <img src="/images/tag-icon.svg" width="20px" /> 
-        </div>
-        <a href="/tags">
-          <div class = "post-list-icon-mate">
-            <span class="post-list__meta--tags-right">{{ post.tags }}</span>
-          </div>
-          <div class = "post-list-small-mate">
-          <a class="btn-border-small" href={{ post.url }}>阅读全文 » </a>
-          </div>
-      </div>
-      <hr class="post-list__divider" />
-    </li>
-    {% endfor %}
-  </ol>
+  <section id="about" class="section">
+    <h1 class="section-title">About Me</h1>
+    <p>
+      I am an AI Research Engineer at <strong>TSMC</strong>, specializing in Post-Training and Agentic Workflows. 
+      I hold a Master of Science in Electrical and Computer Engineering from the <strong>University of Washington</strong>. 
+      My work focuses on Large Language Models (LLMs), Vision-Language Models (VLMs), and building intelligent agentic systems.
+    </p>
+  </section>
 
-  {% include pagination.html %}
+  <hr class="post-list__divider" />
+
+  <section id="experience" class="section">
+    <h1 class="section-title">Professional Experience</h1>
+    
+    <div class="experience-item">
+      <h3>TSMC (Taiwan Semiconductor Manufacturing Company) <span class="date">Jan. 2026 – Present</span></h3>
+      <p class="role">AI Research Engineer (Post-Training & Agentic Workflows) | USA</p>
+      <ul>
+        <li><strong>Document Intelligence:</strong> Leading research on Vision-Language Models (VLM) for semiconductor manufacturing documents. Fine-tuning models to parse nested tables and schematics with 98% accuracy.</li>
+        <li><strong>Enterprise Agent System:</strong> Architecting an agentic BI system utilizing tool-augmented LLMs for policy compliance checks, focusing on model steerability and alignment with safety protocols.</li>
+        <li><strong>Optimization:</strong> Utilizing speculative decoding and vLLM to reduce latency for real-time agent responses.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>SportsBox AI <span class="date">Dec. 2024 – Jan. 2026</span></h3>
+      <p class="role">Machine Learning Engineer (LLM & 3D Vision) | USA</p>
+      <ul>
+        <li><strong>Agentic Feedback:</strong> Designed a multi-modal agent system (LLM + Motion LMs) that translates 3D human pose data into high-quality, professional coaching feedback.</li>
+        <li><strong>Production Alignment:</strong> Post-trained LLMs via SFT to mimic specific coaching personas, ensuring feedback is consistent, encouraging, and technically accurate.</li>
+        <li><strong>Impact:</strong> Optimized pose estimation models for iOS/Android, supporting 100k+ users and improving retention.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>ASUS <span class="date">Oct. 2023 – May 2024</span></h3>
+      <p class="role">AI Researcher (LLM Efficiency) | Taiwan</p>
+      <ul>
+        <li><strong>InstructionCP:</strong> Authored a paper on a fast language-transfer method, allowing Llama models to acquire Chinese chat capabilities with only 0.1B tokens of data.</li>
+        <li><strong>Benchmark Engineering:</strong> Established the internal for evaluating LLM reasoning in Traditional Chinese, which became the standard for the company’s 2024 model releases.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Academia Sinica <span class="date">Jul. 2023 – Sep. 2023</span></h3>
+      <p class="role">Research Intern (Knowledge Localization) | Taiwan</p>
+      <ul>
+        <li><strong>Model Privacy:</strong> Investigated ”knowledge neurons” within Transformers to isolate and update specific facts without retraining, improving model updating efficiency by 40%.</li>
+        <li><strong>Adapter Research:</strong> Designed a novel adapter architecture for temporal knowledge updates, preventing catastrophic forgetting when training on new, daily-changing data.</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="post-list__divider" />
+
+  <section id="publications" class="section">
+    <h1 class="section-title">Selected Publications</h1>
+    <ul class="publication-list">
+      <li>
+        <strong>Modeling LLM Agent Reviewer Dynamics in an Elo-Ranked Review System</strong><br>
+        Hsiang-Wei Huang, Junbin Lu, <strong>Kuang-Ming Chen</strong>, Jenq-Neng Hwang. <em>Accepted by ACL 2026</em>.
+      </li>
+      <li>
+        <strong>FormCraft: A Three-Level Benchmarking Approach to Form Intelligence</strong><br>
+        Jr-Jen Chen*, <strong>Kuang-Ming Chen*</strong>, et al. (with Google DeepMind researchers). <em>Submitted to CVPR 2026</em>.
+      </li>
+      <li>
+        <strong>3D Visual Grounding with Reasoning LLMs</strong><br>
+        Hsiang-Wei Huang*, <strong>Kuang-Ming Chen*</strong>, et al. <em>Accepted by CVPR 2025, 3D-LLM Workshop</em>.
+      </li>
+      <li>
+        <strong>InstructionCP: A fast approach to transfer Large Language Models into target language</strong><br>
+        <strong>Kuang-Ming Chen</strong>, Hung-yi Lee. <em>Accepted by ACL 2025, SIGTYP Workshop</em>.
+      </li>
+      <li>
+        <strong>Chat Vector: A Simple Approach to Equip LLMs With New Language Chat Capabilities</strong><br>
+        Shih-Cheng Huang, Pin-Zu Li, <strong>Kuang-Ming Chen</strong>, et al. <em>Accepted by ACL 2024</em>.
+      </li>
+      <li>
+        <strong>Compressing Transformer-based self-supervised models for speech processing</strong><br>
+        Tzu-Quan Lin, <strong>Kuang-Ming Chen</strong>, et al. <em>Accepted by IEEE ASRU 2025</em>.
+      </li>
+    </ul>
+  </section>
+
+  <hr class="post-list__divider" />
+
+  <section id="projects" class="section">
+    <h1 class="section-title">Selected Projects</h1>
+    
+    <div class="project-item">
+      <h3>Autonomous Data Analyst Agent <span class="date">2026</span></h3>
+      <p>Lead Post-Training Engineer | Open-Source Research</p>
+      <ul>
+        <li>Developed a 14B model (Llama-based) that bypasses LLM context limits by reasoning over database metadata via deterministic Python execution.</li>
+        <li>Applied GRPO (Group Relative Policy Optimization) with Process Supervision.</li>
+        <li>Achieved an 82% accuracy on TabMWP, a significant leap from the 20% base model performance.</li>
+      </ul>
+    </div>
+
+    <div class="project-item">
+      <h3>ICCV 2025 AI City Challenge (Track 3) <span class="date">2025</span></h3>
+      <p>1st Place Winner (Warehouse Spatial Intelligence) | NVIDIA / ICCV</p>
+      <ul>
+        <li>Solved complex spatial QA (object counting, distance estimation, retrieval) in a large-scale warehouse environment using Multi-modal LLMs (MLLMs).</li>
+        <li>Engineered a data-efficient agentic system that decomposes spatial queries into multi-step API calls.</li>
+        <li>Secured 1st place globally against 10+ international teams.</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="post-list__divider" />
+
+  <section id="education" class="section">
+    <h1 class="section-title">Education</h1>
+    <div class="education-item">
+      <h3>University of Washington <span class="date">Sep. 2024 – Jan. 2026</span></h3>
+      <p>Master of Science in Electrical and Computer Engineering (GPA: 3.9/4.0) | Washington, USA</p>
+    </div>
+    <div class="education-item">
+      <h3>National Taiwan University <span class="date">Sep. 2019 – Jun. 2024</span></h3>
+      <p>Bachelor of Science in Mechanical Engineering (Last 60 GPA: 3.85/4.0) | Taiwan</p>
+    </div>
+  </section>
+
+  <hr class="post-list__divider" />
+
+  <section id="skills" class="section">
+    <h1 class="section-title">Technical Skills</h1>
+    <ul class="skills-list">
+      <li><strong>Post-Training & Alignment:</strong> GRPO, RLHF, PPO, DPO, SFT, Process Supervision, Constitutional AI, Reward Modeling, Preference Data Curation.</li>
+      <li><strong>Agentic Architectures:</strong> Multi-agent systems, Tool-use (Computer Use), MCP, Long-context RAG, ReAct/Plan-and-Execute patterns.</li>
+      <li><strong>Infrastructure & Engineering:</strong> Python (Expert), C++, PyTorch, DeepSpeed, vLLM, Docker, Kubernetes, Slurm, NVIDIA Warp.</li>
+      <li><strong>Data & Design:</strong> SQL, Pandas, MATLAB, AutoCAD, Inventor.</li>
+    </ul>
+  </section>
 
 </div>
+
+<style>
+  .section {
+    padding: 20px 0;
+  }
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #27408B;
+    border-bottom: 2px solid #27408B;
+    padding-bottom: 5px;
+  }
+  .experience-item, .project-item, .education-item {
+    margin-bottom: 25px;
+  }
+  .experience-item h3, .project-item h3, .education-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .date {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+  }
+  .role {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  ul {
+    margin-left: 20px;
+    list-style-type: disc;
+  }
+  li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  .publication-list li {
+    margin-bottom: 15px;
+  }
+  .skills-list li {
+    list-style-type: none;
+    margin-left: 0;
+  }
+</style>

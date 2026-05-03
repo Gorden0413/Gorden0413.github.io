@@ -1,10 +1,10 @@
 # Basic
-title: KUANG,MING-CHEN
-subtitle: Homepage
-description: Welcome to my homepage
-avatarTitle: Gorden0413
-avatarDesc: Machine Learning/NLP
-url: "http://Gorden0413.tw"
+title: KUANG-MING CHEN
+subtitle: AI Research Engineer @ TSMC
+description: AI Research Engineer specializing in Post-Training & Agentic Workflows.
+avatarTitle: Kuang-Ming Chen
+avatarDesc: AI Research Engineer
+url: "http://Gorden0413.github.io"
 
 enableToc: true
 
@@ -15,30 +15,30 @@ comment:
 # Social
 social:
     github: Gorden0413
-    mail: b08502105@ntu.edu.tw
-
-
+    mail: zxcv900322@gmail.com
+    linkedin: kuang-ming-chen
 
 permalink: /:year/:month/:title/
 # Format
 highlighter: rouge
 
-textColor: #FF0000
+textColor: #333
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
 cover_color: clear
 
 # The blog button should not be removed.
 blog_button:
-    title: Homepage
+    title: Home
 
-# Navigation buttons in the front page.s
+# Navigation buttons in the front page.
 nav:
-    - {title: Archive, description: archive, url: '/archive'}   
-    - {title: Tags, description: tags, url: '/tags'}      
-    - {title: Support, description: support, url: '/support'}      
-    - {title: About Me, description: about, url: '/about'}   
-    
+    - {title: Experience, description: experience, url: '/#experience'}
+    - {title: Publications, description: publications, url: '/#publications'}
+    - {title: Projects, description: projects, url: '/#projects'}
+    - {title: Education, description: education, url: '/#education'}
+    - {title: Skills, description: skills, url: '/#skills'}
+
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
